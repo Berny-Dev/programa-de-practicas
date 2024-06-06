@@ -1,0 +1,80 @@
+#-CREAR UN PROGRAMA  QUE IMPRIMA UNA FACTURA DE 10 ARTICULOS CON LOS SIGUIENTES CAMPOS ; 
+NUMERO DE FACTURA, NOMBRE DEL CLIENTE, DIRECCION, TELEFONO, CANTIDAD DE ARTICULOS, ARTICULOS,
+ PRECIO ,TOTAL, ITBIS, MONTO A PAGAR. SE REQUIERE CALCULAR EL TOTAL, EL 18% DE ITBIS 
+SI LA MERCANCIA TIENE UN CODIGO 001 DE LO CONTRARIO EL ITBIS SERA DE 16% Y EL MONT O A PAGAR.
+
+num_factura = 1
+while num_factura <=11 : 
+    print("===============")
+    print(" GRUPO RAMOS")
+    print("===============\n")
+
+    direccion = "AV coronel juan m aria lora fernandez"
+    nombre = input("ingrese el nombre del cliente ")
+    numero = int(input("ingrese el numero de telefono "))
+
+    print ("\n===============")
+    print("    FACTURACION ")
+    print ("===============\n")
+
+    articulos = int(input("ingrese el codigo de los  articulos "))
+    cantidad = int(input("ingrese la cantidad "))
+    precio = int(input("ingrese el precio "))
+
+    if not articulos == 100:
+        subtotal = cantidad * precio
+        itbis = subtotal *  0.16
+        total = subtotal + itbis
+        print(f"monto a pagar: {total}\n")
+        opcion = int(input("presione 1 para pagar o 2 para cancelar"))
+
+        if opcion == 1 :
+            print("\m=============")
+            print("    FACTURA   ")
+            print("=============\n")
+
+            print(f"numero de factura {num_factura}")
+            print(f"nombre {nombre}")
+            print(f"Direccion ñ{direccion}")
+            print(f"telefono  {numero}")
+            
+
+            print("=======================")
+            print (f"articulo {articulos}")
+            print(f"precio {precio}")
+            print(f"Subtotal {subtotal}")
+            print(f"total {total}")
+            print("=======================")
+            num_factura +=1
+            break
+
+        else:
+            continue    
+
+    else :    
+         subtotal = cantidad * precio
+         itbis = subtotal *  0.18
+         total = subtotal + itbis
+         print(f"monto a pagar: {total}\n")
+         opcion = int(input("presione 1 para pagar o 2 para cancelar"))
+
+         if opcion == 1 :
+            print("\m=============")
+            print("    FACTURA   ")
+            print("=============\n")
+
+            print(f"numero de factura {num_factura}")
+            print(f"cliente {nombre}")
+            print(f"Direccion ñ{direccion}")
+            print(f"telefono  {numero}")
+
+            print("=======================")
+            print (f"articulo {articulos}")
+            print(f"precio {precio}")
+            print(f"Subtotal {subtotal}")
+            print(f"total {total}")
+            print("=======================")
+            num_factura +=1
+            break
+         else:
+             continue 
