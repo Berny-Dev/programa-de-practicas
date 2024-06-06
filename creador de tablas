@@ -1,0 +1,9 @@
+#creador de tablas de multiplicar 
+
+contador = 0 
+num = int(input("imgrese un numero "))
+
+for conrador in range (0 , 13, 1):
+    resultado = contador * num
+    print (f"{contador} X {num } = {resultado}")
+    contador += 1
