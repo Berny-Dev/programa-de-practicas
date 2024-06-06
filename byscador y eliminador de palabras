@@ -1,0 +1,15 @@
+#buscador  y eliminador de palabras
+
+palabra = input("ingrese una palabra ")
+palabra_2 = input("ingrese la palabra a buscar ")
+borrado = ""
+buscar = palabra.find(palabra_2)
+borrado = palabra_2[0 : buscar] + palabra [buscar + len(palabra) +1 : ]
+
+print(borrado)
+
+num = input("UNGRESE UNA PALABRA ")
+
+for num2 in num :
+    palabra = num2 + num
+print (palabra)
