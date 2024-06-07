@@ -1,0 +1,63 @@
+#esto es una calculadora 
+
+print("CALCULADORA\m")
+print ("Elige una opcion\n")
+
+print("1. suma") 
+print("2. resta") 
+print("3. multiplicacion") 
+print("4. division") 
+print("5. division entera") 
+print("6. modulo o resto")
+
+opcion = int(input("opcion?"))
+
+if opcion == 1 :
+    print(" HAS ELEGIDO SUMA")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 += int(input("escribe el segundo numero "))
+
+
+    print (f"la suma es {num_1}")
+
+elif opcion == 2 :
+    print(" HAS ELEGIDO RESTA")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 -= int(input("escribe el segundo numero "))
+
+    print (f"EL RESULTADO  ES {num_1}")
+
+elif opcion == 3 :
+    print(" HAS ELEGIDO MULTIPLICACION")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 *= int(input("escribe el segundo numero "))
+
+    print (f"EL RESULTADO  ES {num_1}") 
+
+elif opcion == 4 :
+    print(" HAS ELEGIDO DIVICION")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 /= int(input("escribe el segundo numero "))
+
+
+    print (f"EL RESULTADO  ES {num_1}")
+
+
+elif opcion == 5 :
+    print(" HAS ELEGIDO DIVICION ENTERA")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 //= int(input("escribe el segundo numero "))
+
+    print (f"EL RESULTADO  ES {num_1}")
+
+
+elif opcion == 6 :
+    print(" HAS ELEGIDO MODULO O RESIDUO")
+    num_1 = int(input("escribe el primer numero "))
+    num_1 %= int(input("escribe el segundo numero "))
+
+    print (f"EL RESULTADO  ES {num_1}")
+
+
+else :
+    print("OPCION NO ENCONTRAFA")
