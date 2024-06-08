@@ -1,0 +1,16 @@
+"""Una juguetería tiene mucho éxito en dos de sus productos: payasos y muñecas.
+ Suele hacer venta por correo y la empresa de logística les cobra por peso de cada 
+ paquete así que deben calcular el peso de los payasos y muñecas que saldrán en cada paquete 
+ a demanda. Cada payaso pesa 112 g y cada muñeca 75 g. Escribir un programa que lea 
+ el número de payasos y muñecas vendidos en el último pedido y calcule el peso 
+ total del paquete que será enviado."""
+
+peso_payasos = 112
+peso_muñecas = 75
+
+cantidad_payasos = int(input("ingrese la cantidad de payasos "))
+cantidad_muñeca = int (input("ingrese la cantidad de muñecas "))
+
+peso_total = (cantidad_payasos * peso_payasos) + (cantidad_muñeca * peso_muñecas)
+
+print(f"este es el peso total del paquete {peso_total}g")
