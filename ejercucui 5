@@ -1,0 +1,8 @@
+# ejercicio 5
+#EEscribir un programa que pregunte al usuario por el número de horas trabajadas y el coste por hora.
+# Después debe mostrar por pantalla la paga que le corre
+
+horas = int(input("ingrese la cantidad de horas "))
+precio = int(input("ingrese el precio de las horas "))
+precio *= horas 
+print(f"esto es lo que te pagan: {precio}")
